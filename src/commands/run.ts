@@ -1,21 +1,16 @@
-import { Command, flags } from "@oclif/command";
+import BaseCommand from "./BaseCommand";
 
-import App from "../app/App";
-
-export default class Run extends Command {
+export default class Run extends BaseCommand {
     static description = "run the archiving process just for once";
-
     static examples = [`$ cabinet run`];
 
     static flags = {
-        help: flags.help({ char: "h" }),
-        config: flags.string({ char: "c", description: "specify configuration file path", default: "./config.json" }),
+        ...BaseCommand.flags,
     };
 
     async run() {
         const { flags } = this.parse(Run);
-
-        await new App().run(flags.config);
+        await this.getApp().run(flags.config, flags["print-config"], flags["no-splash"]);
     }
 
     async catch(error: Error) {

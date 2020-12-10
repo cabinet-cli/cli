@@ -1,3 +1,4 @@
+import * as _ from "lodash";
 import * as yaml from "yaml";
 import * as mineTypes from "mime-types";
 import * as fs from "fs-extra";
@@ -30,6 +31,12 @@ const CONFIGURATION_VALIDATION_SCHEMA = yup.object<ConfigurationData>().shape<Co
 });
 
 export default class Configuration {
+    private readonly config: ConfigurationData;
+
+    public get rawConfig(): ConfigurationData {
+        return _.cloneDeep(this.config);
+    }
+
     public constructor(filePath: string);
     public constructor(data: ConfigurationData);
     public constructor(input: string | ConfigurationData) {
@@ -66,5 +73,7 @@ export default class Configuration {
         }
 
         CONFIGURATION_VALIDATION_SCHEMA.validateSync(config);
+
+        this.config = config;
     }
 }
