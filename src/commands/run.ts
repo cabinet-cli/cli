@@ -12,11 +12,4 @@ export default class Run extends BaseCommand {
         const { flags } = this.parse(Run);
         await this.getApp().run(flags.config, flags["print-config"], flags["no-splash"]);
     }
-
-    async catch(error: Error) {
-        const oclifHandler = require("@oclif/errors/handle");
-
-        // do any extra work with error
-        return oclifHandler(error);
-    }
 }

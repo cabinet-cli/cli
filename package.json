@@ -19,20 +19,25 @@
         "yup": "^0.29.3"
     },
     "devDependencies": {
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.10",
+        "@babel/preset-typescript": "^7.12.7",
         "@oclif/dev-cli": "^1",
         "@types/chai": "^4.2.14",
         "@types/fs-extra": "^9.0.4",
+        "@types/jest": "^26.0.18",
         "@types/lodash": "^4.14.165",
         "@types/mime-types": "^2.1.0",
         "@types/node": "^14.14.11",
         "@types/yup": "^0.29.10",
         "@typescript-eslint/eslint-plugin": "^4.9.1",
         "@typescript-eslint/parser": "^4.9.1",
+        "babel-jest": "^26.6.3",
         "cross-env": "^7.0.3",
         "eslint": "^7.15.0",
         "eslint-config-prettier": "^7.0.0",
         "globby": "^10",
-        "nyc": "^15.1.0",
+        "jest": "^26.6.3",
         "prettier": "^2.2.1",
         "rimraf": "^3.0.2",
         "ts-node": "^9.1.1",
@@ -65,7 +70,8 @@
         "postpack": "rimraf oclif.manifest.json",
         "posttest": "eslint . --ext .ts --config .eslintrc",
         "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
-        "version": "oclif-dev readme && git add README.md"
+        "version": "oclif-dev readme && git add README.md",
+        "test": "jest --coverage"
     },
     "types": "lib/index.d.ts"
 }
