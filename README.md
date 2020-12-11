@@ -4,7 +4,7 @@ cabinet-cli
 A normal web archiver but aims to work for literally everything
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/cabinet-cli.svg)](https://npmjs.org/package/cabinet-cli)
+[![Build Status](https://travis-ci.com/cabinet-cli/core.svg?branch=master)](https://travis-ci.com/cabinet-cli/core)
 [![Downloads/week](https://img.shields.io/npm/dw/cabinet-cli.svg)](https://npmjs.org/package/cabinet-cli)
 [![License](https://img.shields.io/npm/l/cabinet-cli.svg)](https://github.com/cabinet-cli/core/blob/master/package.json)
 
