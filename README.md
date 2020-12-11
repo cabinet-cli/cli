@@ -5,7 +5,7 @@ A normal web archiver but aims to work for literally everything
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Build Status](https://travis-ci.com/cabinet-cli/core.svg?branch=master)](https://travis-ci.com/cabinet-cli/core)
-[![Downloads/week](https://img.shields.io/npm/dw/cabinet-cli.svg)](https://npmjs.org/package/cabinet-cli)
+[![codecov](https://img.shields.io/codecov/c/github/cabinet-cli/core)](https://codecov.io/gh/cabinet-cli/core)
 [![License](https://img.shields.io/npm/l/cabinet-cli.svg)](https://github.com/cabinet-cli/core/blob/master/package.json)
 
 <!-- toc -->
