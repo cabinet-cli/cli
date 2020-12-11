@@ -1,5 +1,5 @@
 {
-    "name": "@cabinet/cli",
+    "name": "@cabinet-cli/cli",
     "description": "A normal web archiver but aims to work for literally everything\n",
     "version": "0.0.1",
     "author": "Sophia <beyondthesophia@naver.com>",
