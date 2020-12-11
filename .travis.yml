@@ -4,8 +4,11 @@ node_js:
 
 cache: yarn
 
+before_install:
+  - npm install -g codecov
+
 script:
   - ./bin/run --version
   - ./bin/run --help
-  - yarn run test
+  - yarn run test --ci && codecov
 
