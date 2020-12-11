@@ -11,8 +11,8 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/cli-oclif-brightgreen.svg?style=flat-square" alt="Oclif" />
-  <img src="https://img.shields.io/travis/com/cabinet-cli/core?style=flat-square" alt="Build Status" />
-  <img src="https://img.shields.io/codecov/c/github/cabinet-cli/core?style=flat-square" alt="Coverage" />
+  <img src="https://img.shields.io/travis/com/cabinet-cli/cli?style=flat-square" alt="Build Status" />
+  <img src="https://img.shields.io/codecov/c/github/cabinet-cli/cli?style=flat-square" alt="Coverage" />
   <br />
   <sup>A normal web archiver but aims to work for literally everything
 </sup>
@@ -27,7 +27,7 @@
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g cabinet-cli
+$ npm install -g @cabinet/cli
 $ cabinet COMMAND
 running command...
 $ cabinet (-v|--version|version)
@@ -35,7 +35,6 @@ cabinet-cli/0.0.1 win32-x64 node-v12.18.4
 $ cabinet --help [COMMAND]
 USAGE
   $ cabinet COMMAND
-...
 ```
 <!-- usagestop -->
 # Commands

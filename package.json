@@ -1,12 +1,12 @@
 {
-    "name": "cabinet-cli",
+    "name": "@cabinet/cli",
     "description": "A normal web archiver but aims to work for literally everything\n",
     "version": "0.0.1",
-    "author": "Sophia <async3619@naver.com>",
+    "author": "Sophia <beyondthesophia@naver.com>",
     "bin": {
         "cabinet": "./bin/run"
     },
-    "bugs": "https://github.com/cabinet-cli/core/issues",
+    "bugs": "https://github.com/cabinet-cli/cli/issues",
     "dependencies": {
         "@oclif/command": "^1",
         "@oclif/config": "^1",
@@ -56,7 +56,7 @@
         "/npm-shrinkwrap.json",
         "/oclif.manifest.json"
     ],
-    "homepage": "https://github.com/cabinet-cli/core",
+    "homepage": "https://github.com/cabinet-cli/cli",
     "keywords": [
         "oclif"
     ],
@@ -69,7 +69,7 @@
             "@oclif/plugin-help"
         ]
     },
-    "repository": "cabinet-cli/core",
+    "repository": "cabinet-cli/cli",
     "scripts": {
         "oclif-dev": "node -r tsconfig-paths/register node_modules/.bin/oclif-dev",
         "postpack": "rimraf oclif.manifest.json",
