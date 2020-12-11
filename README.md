@@ -1,17 +1,26 @@
-cabinet-cli
-===========
+<h1 align="center">
+  <br />
+  <img src="https://avatars0.githubusercontent.com/u/75741868?s=100&v=4" />
+  <br />
+  Cabinet
+  <sup>
+    <br />
+    <br />
+  </sup>
+</h1>
 
-A normal web archiver but aims to work for literally everything
-
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Build Status](https://travis-ci.com/cabinet-cli/core.svg?branch=master)](https://travis-ci.com/cabinet-cli/core)
-[![codecov](https://img.shields.io/codecov/c/github/cabinet-cli/core)](https://codecov.io/gh/cabinet-cli/core)
-[![License](https://img.shields.io/npm/l/cabinet-cli.svg)](https://github.com/cabinet-cli/core/blob/master/package.json)
+<div align="center">
+  <img src="https://img.shields.io/badge/cli-oclif-brightgreen.svg?style=flat-square" alt="Oclif" />
+  <img src="https://img.shields.io/travis/com/cabinet-cli/core?style=flat-square" alt="Build Status" />
+  <img src="https://img.shields.io/codecov/c/github/cabinet-cli/core?style=flat-square" alt="Coverage" />
+  <br />
+  <sup>A normal web archiver but aims to work for literally everything
+</sup>
+  <br />
+  <br />
+</div>
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
@@ -23,18 +32,6 @@ $ cabinet COMMAND
 running command...
 $ cabinet (-v|--version|version)
 cabinet-cli/0.0.1 win32-x64 node-v12.18.4
-$ cabinet --help [COMMAND]
-USAGE
-  $ cabinet COMMAND
-...
-```
-<!-- usagestop -->
-```sh-session
-$ npm install -g cabinet-cli
-$ cabinet COMMAND
-running command...
-$ cabinet (-v|--version|version)
-cabinet-cli/0.0.1 win32-x64 node-v12.18.2
 $ cabinet --help [COMMAND]
 USAGE
   $ cabinet COMMAND
