@@ -12,8 +12,23 @@ A normal web archiver but aims to work for literally everything
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
 # Usage
 <!-- usage -->
+```sh-session
+$ npm install -g cabinet-cli
+$ cabinet COMMAND
+running command...
+$ cabinet (-v|--version|version)
+cabinet-cli/0.0.1 win32-x64 node-v12.18.4
+$ cabinet --help [COMMAND]
+USAGE
+  $ cabinet COMMAND
+...
+```
+<!-- usagestop -->
 ```sh-session
 $ npm install -g cabinet-cli
 $ cabinet COMMAND
@@ -28,28 +43,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`cabinet hello [FILE]`](#cabinet-hello-file)
 * [`cabinet help [COMMAND]`](#cabinet-help-command)
-
-## `cabinet hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ cabinet hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ cabinet hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/cabinet-cli/core/blob/v0.0.1/src/commands/hello.ts)_
+* [`cabinet run`](#cabinet-run)
 
 ## `cabinet help [COMMAND]`
 
@@ -67,4 +62,23 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
-<!-- commandsstop -->
+
+## `cabinet run`
+
+run the archiving process just for once
+
+```
+USAGE
+  $ cabinet run
+
+OPTIONS
+  -c, --config=config  [default: ./config.json] specify configuration file path
+  -h, --help           show CLI help
+  --no-splash          prevent display splash logo
+  --print-config       print current provided configuration data
+
+EXAMPLE
+  $ cabinet run
+```
+
+_See code: [src/commands/run.ts](https://github.com/cabinet-cli/core/blob/v0.0.1/src/commands/run.ts)_

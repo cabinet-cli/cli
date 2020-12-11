@@ -1,6 +1,6 @@
-import Configuration from "./Configuration";
+import Configuration from "@app/Configuration";
 
-import { SPLASH_TEXT } from "../constants";
+import { SPLASH_TEXT } from "@root/constants";
 
 export default class App {
     async run(configFilePath: string, printConfig?: boolean, noSplash?: boolean) {

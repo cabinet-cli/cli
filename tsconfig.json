@@ -7,7 +7,12 @@
         "rootDir": "src",
         "baseUrl": ".",
         "strict": true,
-        "target": "es2017"
+        "target": "es2017",
+        "paths": {
+            "@root/*": ["./src/*"],
+            "@app/*": ["./src/app/*"],
+            "@libs/*": ["./src/libs/*"]
+        }
     },
     "include": ["src/**/*"]
 }

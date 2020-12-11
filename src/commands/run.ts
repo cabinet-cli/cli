@@ -1,4 +1,4 @@
-import BaseCommand from "./BaseCommand";
+import BaseCommand from "@libs/BaseCommand";
 
 export default class Run extends BaseCommand {
     static description = "run the archiving process just for once";

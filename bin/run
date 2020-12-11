@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
-require('@oclif/command').run()
-.then(require('@oclif/command/flush'))
-.catch(require('@oclif/errors/handle'))
+if (process.env.NODE_ENV === "development") {
+    const tsconfig = require("../tsconfig.json");
+    require("tsconfig-paths").register({
+        baseUrl: ".",
+        paths: tsconfig.compilerOptions.paths,
+    });
+}
+
+require("@oclif/command").run().then(require("@oclif/command/flush")).catch(require("@oclif/errors/handle"));

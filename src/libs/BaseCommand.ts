@@ -1,6 +1,6 @@
 import { Command, flags } from "@oclif/command";
 
-import App from "../app/App";
+import App from "@app/App";
 
 export default abstract class BaseCommand extends Command {
     static flags = {

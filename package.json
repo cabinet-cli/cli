@@ -41,6 +41,7 @@
         "prettier": "^2.2.1",
         "rimraf": "^3.0.2",
         "ts-node": "^9.1.1",
+        "tsconfig-paths": "^3.9.0",
         "typescript": "^3.9.7"
     },
     "engines": {
@@ -67,10 +68,11 @@
     },
     "repository": "cabinet-cli/core",
     "scripts": {
+        "oclif-dev": "node -r tsconfig-paths/register node_modules/.bin/oclif-dev",
         "postpack": "rimraf oclif.manifest.json",
         "posttest": "eslint . --ext .ts --config .eslintrc",
-        "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
-        "version": "oclif-dev readme && git add README.md",
+        "prepack": "rimraf lib && tsc -b && npm run oclif-dev manifest && npm run oclif-dev readme",
+        "version": "npm run oclif-dev readme && git add README.md",
         "test": "jest --coverage"
     },
     "types": "lib/index.d.ts"
